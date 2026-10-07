@@ -53,7 +53,7 @@ export function DashboardPage() {
     <div>
       <p className="text-xs font-semibold uppercase tracking-wide text-muted">{formatLongDate()}</p>
       <h1 className="mt-1 text-3xl font-bold md:text-4xl">
-        {greeting()}, {context.user.name} 👋
+        {greeting()}, {context.user.name}
       </h1>
       <p className="mt-1 text-muted">Here's where your money stands.</p>
 

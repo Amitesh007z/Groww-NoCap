@@ -8,15 +8,15 @@ import { useUserStore } from "../store/userStore";
 import { emit } from "../services/events";
 import type { ExperienceLevel, GoalCategory, Interest } from "../types/user";
 
-const goals: { id: GoalCategory; label: string; icon: string }[] = [
-  { id: "education", label: "Education", icon: "🎓" },
-  { id: "wealth", label: "Build Wealth", icon: "🏠" },
-  { id: "safety", label: "Safety", icon: "🛟" },
-  { id: "experience", label: "Major Experience", icon: "✈️" },
-  { id: "purchase", label: "Major Purchase", icon: "🚗" },
-  { id: "freedom", label: "Financial Freedom", icon: "💼" },
-  { id: "long-term", label: "Long-term Wealth", icon: "📈" },
-  { id: "other", label: "Something Else", icon: "✨" },
+const goals: { id: GoalCategory; label: string }[] = [
+  { id: "education", label: "Education" },
+  { id: "wealth", label: "Build Wealth" },
+  { id: "safety", label: "Safety" },
+  { id: "experience", label: "Major Experience" },
+  { id: "purchase", label: "Major Purchase" },
+  { id: "freedom", label: "Financial Freedom" },
+  { id: "long-term", label: "Long-term Wealth" },
+  { id: "other", label: "Something Else" },
 ];
 
 const amounts = [
@@ -30,10 +30,10 @@ const amounts = [
 const yearsOpts = [1, 3, 5, 10];
 
 const familiarity: { id: ExperienceLevel; label: string }[] = [
-  { id: "new", label: "🌱 I'm completely new" },
-  { id: "basics", label: "🔎 I know the basics" },
-  { id: "invested", label: "📊 I've invested before" },
-  { id: "markets", label: "🧠 I understand markets fairly well" },
+  { id: "new", label: "I'm completely new" },
+  { id: "basics", label: "I know the basics" },
+  { id: "invested", label: "I've invested before" },
+  { id: "markets", label: "I understand markets fairly well" },
 ];
 
 const interestOptions: Interest[] = [
@@ -126,8 +126,7 @@ export function OnboardingPage() {
                 className={`min-h-tap rounded-2xl border p-4 text-left ${category === g.id ? "border-groww bg-groww-faint" : "border-line bg-white"}`}
                 onClick={() => setCategory(g.id)}
               >
-                <div className="text-xl">{g.icon}</div>
-                <div className="mt-2 font-semibold">{g.label}</div>
+                <div className="font-semibold">{g.label}</div>
               </button>
             ))}
           </div>

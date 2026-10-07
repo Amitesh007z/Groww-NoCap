@@ -141,7 +141,7 @@ export function LearningCard({
       <p className="mt-3 text-sm text-muted">You understand:</p>
       <ul className="mt-1 space-y-1 text-sm">
         {known.map((item) => (
-          <li key={item}>✓ {item}</li>
+          <li key={item}>{item}</li>
         ))}
       </ul>
       <p className="mt-3 text-sm">

@@ -17,9 +17,9 @@ export function DecisionBrief({
   return (
     <div className="space-y-4">
       <p className="text-sm text-muted">{assetName}</p>
-      <RiskCard tone="good" title="Why it could make sense" items={["✓ Long-term horizon", "✓ Fits your selected path", "✓ Diversification benefit"]} />
-      <RiskCard tone="warn" title="What could go wrong" items={["⚠ High valuation", "⚠ Sector concentration", "⚠ High volatility"]} />
-      <RiskCard tone="open" title="What you haven't checked" items={["○ Debt", "○ Cash flow"]} />
+      <RiskCard tone="good" title="Why it could make sense" items={["Long-term horizon", "Fits your selected path", "Diversification benefit"]} />
+      <RiskCard tone="warn" title="What could go wrong" items={["High valuation", "Sector concentration", "High volatility"]} />
+      <RiskCard tone="open" title="What you haven't checked" items={["Debt", "Cash flow"]} />
       <section className="rounded-2xl border border-line bg-white p-5">
         <h3 className="font-semibold">Goal impact</h3>
         <p className="mt-3 text-sm">Current technology exposure: {before}%</p>
