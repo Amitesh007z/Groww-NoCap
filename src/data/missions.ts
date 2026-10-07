@@ -1,0 +1,48 @@
+import type { Mission } from "../types/concept";
+
+export const missions: Mission[] = [
+  {
+    id: "pe-mission",
+    number: "01",
+    title: "Understand P/E",
+    description: "You're exploring stocks, and valuation is the next concept that will help you evaluate them.",
+    difficulty: "Beginner",
+    minutes: 2,
+    reward: "+1 Investor Skill",
+    href: "/lens/pe",
+    conceptId: "pe",
+  },
+  {
+    id: "correction-mission",
+    number: "02",
+    title: "Survive a market correction",
+    description: "You're considering individual stocks. Experience a market correction first.",
+    difficulty: "Intermediate",
+    minutes: 4,
+    reward: "+1 Investor Skill",
+    href: "/sim/covid",
+    simulationId: "covid",
+  },
+  {
+    id: "ipo-mission",
+    number: "03",
+    title: "Evaluate an IPO",
+    description: "Walk through Nova Mobility before treating subscription as a signal to rush.",
+    difficulty: "Intermediate",
+    minutes: 3,
+    reward: "+1 Investor Skill",
+    href: "/ipo",
+    conceptId: "ipo",
+  },
+  {
+    id: "leverage-mission",
+    number: "04",
+    title: "Understand leverage",
+    description: "F&O behaves differently from long-term investing. Feel it with virtual capital first.",
+    difficulty: "Advanced",
+    minutes: 5,
+    reward: "+1 Investor Skill",
+    href: "/fno",
+    simulationId: "fno",
+  },
+];
